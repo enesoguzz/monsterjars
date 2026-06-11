@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monster Jars</title>
+    <meta name="description" content="Monster Jars dessert shop menu, juices, ice cream, milkshakes and allergen guide.">
+    <link rel="preload" href="assets/brand/logo.jpg" as="image">
+    <link rel="preload" href="assets/products/milkshakes/monster-jar.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Monster Jars home">
+        <img src="assets/brand/logo.jpg" alt="Monster Jars">
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#menu">Menu</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#locations">Locations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="order-link" href="#locations">Find Us</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media">
+          <img src="assets/products/milkshakes/monster-jar.png" alt="Monster Jar milkshake topped with cream and candy">
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Milkshakes • Ice Cream • Fresh Juices</p>
+          <h1 id="hero-title">Crazy milkshakes, ice cream and fresh juices.</h1>
+          <p class="hero-text">Loaded dessert jars, refreshing juices and sweet treats made for families, shoppers and anyone craving something fun. Visit Monster Jars in Clarksburg, MD and Fairfax, VA.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#menu">View Menu</a>
+            <a class="button secondary" href="#locations">Find a Location</a>
+            <a class="button ghost" href="https://www.instagram.com/monsterjars/" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-contact" aria-label="Quick contact links">
+        <a href="#locations">
+          <span>Locations</span>
+          Clarksburg, MD & Fairfax, VA
+        </a>
+        <a href="mailto:monsterjarsmilkshake@gmail.com">
+          <span>Email</span>
+          monsterjarsmilkshake@gmail.com
+        </a>
+        <a href="https://www.instagram.com/monsterjars/" target="_blank" rel="noreferrer">
+          <span>Instagram</span>
+          @monsterjars
+        </a>
+      </section>
+
+      <section class="serve-section" id="menu" aria-labelledby="serve-title">
+        <div class="section-heading">
+          <p class="eyebrow">What we serve</p>
+          <h2 id="serve-title">Bold, colorful and made to be shared</h2>
+        </div>
+        <div class="serve-grid">
+          <article class="serve-card">
+            <img src="assets/products/milkshakes/monster-jar.png" alt="Monster Jar milkshake">
+            <div>
+              <h3>Monster Milkshakes</h3>
+              <p>Over-the-top loaded jars with whipped cream, sauces, fruit, cookies and premium toppings.</p>
+            </div>
+          </article>
+          <article class="serve-card">
+            <img src="assets/products/juices/pineapple-mango.png" alt="Pineapple Mango juice">
+            <div>
+              <h3>Fresh Juices</h3>
+              <p>Bright fruit flavors made for a refreshing stop during a shopping day.</p>
+            </div>
+          </article>
+          <article class="serve-card">
+            <img src="assets/products/ice-cream/cookie-butter.png" alt="Cookie Butter ice cream">
+            <div>
+              <h3>Ice Cream</h3>
+              <p>Classic scoops and fun flavors for families, friends and sweet-tooth moments.</p>
+            </div>
+          </article>
+          <article class="serve-card text-card">
+            <div>
+              <h3>Coffee & Hot Drinks</h3>
+              <p>Seasonal coffee, tea and hot chocolate options during colder months and special periods.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-strip" id="favorites" aria-labelledby="favorites-title">
+        <div class="section-heading">
+          <p class="eyebrow">Fan favorites</p>
+          <h2 id="favorites-title">Photo-worthy picks customers look for first</h2>
+        </div>
+        <div class="featured-grid">
+          <article class="feature-card">
+            <img src="assets/products/milkshakes/monster-jar.png" alt="Monster Jar milkshake">
+            <div>
+              <p>Signature Jar</p>
+              <h3>Monster Jar</h3>
+            </div>
+          </article>
+          <article class="feature-card">
+            <img src="assets/products/juices/hibiscus-guava.png" alt="Hibiscus Guava juice">
+            <div>
+              <p>Bright Juice</p>
+              <h3>Hibiscus Guava</h3>
+            </div>
+          </article>
+          <article class="feature-card">
+            <img src="assets/products/ice-cream/snallygaster.png" alt="Snallygaster ice cream">
+            <div>
+              <p>Local Legend</p>
+              <h3>Snallygaster</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="products-section" id="products" aria-labelledby="products-title">
+        <div class="section-heading">
+          <p class="eyebrow">Product photos</p>
+          <h2 id="products-title">Browse the lineup</h2>
+        </div>
+        <div class="category-tabs" role="tablist" aria-label="Product categories">
+          <button class="tab active" type="button" data-category="all">All</button>
+          <button class="tab" type="button" data-category="milkshakes">Milkshakes</button>
+          <button class="tab" type="button" data-category="ice-cream">Ice Cream</button>
+          <button class="tab" type="button" data-category="juices">Juices</button>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="menu-section" id="menus" aria-labelledby="menus-title">
+        <div class="section-heading">
+          <p class="eyebrow">Menu boards</p>
+          <h2 id="menus-title">See the menu categories</h2>
+        </div>
+        <div class="menu-layout">
+          <div class="menu-selector" role="tablist" aria-label="Menu images">
+            <button class="menu-button active" type="button" data-menu="main-menu">Main Menu</button>
+            <button class="menu-button" type="button" data-menu="milkshakes">Milkshakes</button>
+            <button class="menu-button" type="button" data-menu="ice-creams">Ice Creams</button>
+            <button class="menu-button" type="button" data-menu="juices">Juices</button>
+            <button class="menu-button" type="button" data-menu="allergen-guide">Allergen Guide</button>
+          </div>
+          <figure class="menu-preview">
+            <button class="image-zoom" type="button" id="zoom-menu" aria-label="Open selected menu larger">
+              <img id="menu-image" src="assets/menus/main-menu.png" alt="Main Menu">
+            </button>
+            <figcaption id="menu-caption">Main Menu</figcaption>
+          </figure>
+        </div>
+        <p class="allergen-note">Please let our team know about any allergies before ordering. Many items may contain or come into contact with dairy, nuts, gluten, soy, eggs and other allergens.</p>
+      </section>
+
+      <section class="locations-section" id="locations" aria-labelledby="locations-title">
+        <div class="section-heading">
+          <p class="eyebrow">Visit Monster Jars</p>
+          <h2 id="locations-title">Two locations serving Clarksburg and Fairfax</h2>
+        </div>
+        <div class="locations-grid">
+          <article class="location-card">
+            <h3>Clarksburg Premium Outlets</h3>
+            <address>22705 Clarksburg Rd<br>Clarksburg, MD 20871<br>United States</address>
+            <dl>
+              <div><dt>Sunday</dt><dd>11:00 AM-7:00 PM</dd></div>
+              <div><dt>Monday-Saturday</dt><dd>10:00 AM-9:00 PM</dd></div>
+            </dl>
+            <a class="button primary" href="https://www.google.com/maps/search/?api=1&query=22705%20Clarksburg%20Rd%20Clarksburg%20MD%2020871" target="_blank" rel="noreferrer">Get Directions</a>
+          </article>
+          <article class="location-card">
+            <h3>Fair Oaks Mall</h3>
+            <address>11847 Fair Oaks Mall<br>Fairfax, VA 22033<br>United States</address>
+            <dl>
+              <div><dt>Sunday</dt><dd>11:00 AM-7:00 PM</dd></div>
+              <div><dt>Monday-Thursday</dt><dd>10:00 AM-8:00 PM</dd></div>
+              <div><dt>Friday-Saturday</dt><dd>10:00 AM-9:00 PM</dd></div>
+            </dl>
+            <a class="button primary" href="https://www.google.com/maps/search/?api=1&query=11847%20Fair%20Oaks%20Mall%20Fairfax%20VA%2022033" target="_blank" rel="noreferrer">Get Directions</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A DMV dessert shop built for fun stops and first photos</h2>
+        </div>
+        <p>Monster Jars serves loaded milkshakes, fresh juices, ice cream and seasonal hot drinks. The experience is family-friendly, mall-friendly and designed for colorful desserts people want to share.</p>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact Monster Jars</p>
+          <h2 id="contact-title">Questions, events or business inquiries?</h2>
+          <p>Contact Monster Jars by email or follow us on Instagram for updates, new products and location news.</p>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:monsterjarsmilkshake@gmail.com">Email Us</a>
+            <a class="button secondary" href="https://www.instagram.com/monsterjars/" target="_blank" rel="noreferrer">Follow @monsterjars</a>
+          </div>
+        </div>
+        <img src="assets/brand/store-sign.jpg" alt="Monster Jars storefront sign">
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/brand/logo.jpg" alt="Monster Jars">
+        <p>Milkshakes • Ice Cream • Fresh Juices</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#top">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#locations">Locations</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:monsterjarsmilkshake@gmail.com">monsterjarsmilkshake@gmail.com</a>
+        <a href="https://www.instagram.com/monsterjars/" target="_blank" rel="noreferrer">@monsterjars</a>
+        <span>Clarksburg, MD & Fairfax, VA</span>
+      </div>
+    </footer>
+
+    <dialog class="menu-dialog" id="menu-dialog">
+      <button class="dialog-close" type="button" aria-label="Close menu">Close</button>
+      <img id="dialog-image" src="assets/menus/main-menu.png" alt="">
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
